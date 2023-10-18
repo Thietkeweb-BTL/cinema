@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        body {
+            background-color: #FFE0E6;
+            margin: 0px;
+            font-family: 'Oswald', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            display: flex;
+            height: 230px;
+
+        }
+
+        body>* {
+            flex-grow: 1;
+            width: 0;
+        }
+
+        h3 {
+
+            margin: 10px 10px 10px 50px;
+
+        }
+
+        .content-left ul {
+            margin-left: 90px;
+        }
+
+        .content-left ul li {
+            text-transform: uppercasem;
+            font-weight: 400;
+
+        }
+
+        #icon {
+            margin-left: 110px;
+            margin-bottom: 10px;
+
+        }
+
+        #icon a {
+            text-decoration: none;
+        }
+
+        #fb {
+            width: 8%;
+            height: 8%;
+            margin-right: 5px;
+        }
+
+        #zalo {
+            width: 8%;
+            height: 8%;
+            margin-right: 5px;
+        }
+
+        #ig {
+            width: 8%;
+            height: 8%;
+            margin-right: 5px;
+        }
+
+        #tiktok {
+            width: 8%;
+            height: 8%;
+            margin-right: 5px;
+        }
+
+        .table {
+            margin-left: 110px;
+        }
+
+        .table input,
+        textarea {
+            margin-left: 30px;
+            border: none;
+            border-radius: 3px;
+            margin: 1px;
+            padding: 3px 5px;
+            /* transition: 0.5s; */
+        }
+
+        .table input:focus {
+            border-radius: 0;
+        }
+
+        .feedback {
+            /* color: #f8f8f8;
+            font-weight: 700; */
+            /* margin-top: 30px; */
+
+            flex-grow: 1;
+            /* background-color: #FFAEBE */
+            background-color: rgba(255, 174, 190);
+        }
+
+
+        #send-it {
+
+            margin-top: 15px;
+            margin-left: 110px;
+            padding: 8px 12px;
+
+            margin-bottom: 20px;
+            background-color: #35A7DE;
+            border: none;
+            border-radius: 5px;
+            transition: 0.5s;
+        }
+
+        #send-it:hover,
+        #send-it:focus {
+            background-color: #b2d134;
+        }
+
+        @media(max-width:660px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            body>* {
+                flex-grow: 0;
+                width: 100%;
+            }
+
+            .feedback {
+                font-size: 16px;
+
+            }
+
+            .content-left {
+                font-size: 16px;
+            }
+
+            .content-left ul {
+                margin-left: 90px;
+            }
+
+            #icon {
+                margin-left: 120px;
+            }
+
+            .table input,
+            textarea {
+                margin-left: 100px;
+                border: none;
+                border-radius: 3px;
+                margin: 1px;
+                padding: 3px 5px;
+                /* transition: 0.5s; */
+            }
+        }
+        @media(max-width:320px){
+            .table input{
+                size: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-left">
+        <div id="member" style="height: 170px;">
+            <h3>Liên Hệ:</h3>
+            <ul>
+                <li>Lê Thanh Huyền</li>
+                <li>Nguyễn Thị Phương Anh</li>
+                <li>Nguyễn Văn Hoàn</li>
+                <li>Ngô Văn Quang</li>
+
+            </ul>
+
+            <div id="icon">
+
+                <a href="https://www.facebook.com/profile.php?id=100040114293236" target="_blank">
+                    <img id="fb" src="./images/fb.png" alt="FB">
+                </a>
+                <a href="https://zalo.me/0859409880" target="_blank">
+                    <img id="zalo" src="./images/zalo.png" alt="ZALO">
+                </a>
+                <a href="https://www.instagram.com/1632004huyen/?hl=en" target="_blank">
+                    <img id="ig" src="./images/ig.png" alt="ig">
+                </a>
+                <a href="https://www.tiktok.com/@user830412679?_t=8gWej1x290a&_r=1&fbclid=IwAR3NgvxM5UQWP1eTF-qg-sIgGWkouROdpInp6s_L41UakiaGjRnwFr4Qn4Q"
+                    target="_blank">
+                    <img id="tiktok" src="./images/tiktok.png" alt="tiktok">
+                </a>
+            </div>
+        </div>
+        <div>
+
+
+        </div>
+
+        <!-- </div> -->
+
+    </div>
+
+    <div class="feedback" style="height: 100vh;">
+        <div>
+            <h3>Feedback:</h3>
+        </div>
+        <table class="table">
+            <tr>
+                <td style="margin-left: 5px;">Name:</td>
+                <td>
+                    <input type="text" name="name" placeholder="Your name" size="20" style="background-color: #FFE0E6;">
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-left: 5px;">Email:</td>
+                <td>
+                    <input type="email" name="" id="" placeholder="email" size="20" style="background-color: #FFE0E6;">
+                </td>
+            </tr>
+            <tr>
+                <td style="margin-left: 5px;">Message:</td>
+                <td>
+                    <textarea type="text" value="feedback"  maxlength="50" size="25"
+                        style=" word-break: break-all; background-color:#FFE0E6; resize: none;"></textarea>
+                </td>
+            </tr>
+
+
+        </table>
+        <input id="send-it" type="submit" onclick="SubmitEvent" value="SEND IT"
+            style="text-align: center; color: white; font-weight: 500;">
+    </div>
+
+</body>
+
+</html>

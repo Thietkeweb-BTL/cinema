@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .myslide {
+            width: 100vw;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: fixed;
+            transition: 1s;
+            background-attachment: fixed;
+
+        }
+
+        #slide-1 {
+            background-image: url(images/img_1.png);
+        }
+
+        #slide-2 {
+            background-image: url(images/img_3.png);
+        }
+
+        #slide-3 {
+            background-image: url(images/img_2.png);
+        }
+        #slide-4{
+            background-image: url(images/img_6.png);
+        }
+        .next{
+            position: fixed;
+            right: 0;
+            top:0;
+            bottom: 0;
+            border: none;
+            background:none;
+            background-image: linear-gradient(-90deg,rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0)) ;
+            
+        }
+        .prev{
+            position: fixed;
+            left: 0;
+            top:0;
+            bottom: 0;
+            background: none;
+            border: none;
+            background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0)) ;
+        } 
+        .arrow{
+            width: 50px;
+            height: 50px;
+            border-top: 10px solid white;
+            border-left: 10px solid white;
+            
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="myslide" id="slide-1">
+    </div>
+    <div class="myslide" id="slide-2">
+    </div>
+    <div class="myslide" id="slide-3"></div>
+    <div class="myslide" id="slide-4"></div>
+    <button class="next" onclick="nextslide()"><div style="rotate:135deg " class="arrow"></div></button>
+    <button class="prev" onclick="prevslide()" >
+        <div style="rotate:-45deg" class="arrow"></div>
+    </button>
+    <script>
+        var a=0;
+        var slide = document.getElementsByClassName("myslide");
+        var t;
+        function huyen() {
+            for(let i=0;i<slide.length;i++){
+                if(i<=a) slide[i].style.left="0px";
+                else slide[i].style.left="100vw";
+            }
+            a++;
+            a%=slide.length;
+            // if(a==slide.length)a=0;
+            t = setTimeout(huyen, 3000);
+        }
+        huyen();
+        function nextslide(){
+            clearTimeout(t);
+            huyen();
+        }
+        function prevslide(){
+            a-=2;
+            while(a<0)a+=slide.length;
+            if(a==slide.length){ a=0; }
+            clearTimeout(t);
+            huyen();    
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.poster {
+    height: 100%;
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.poster img {
+
+    height: 70vh;
+}
+
+.in4 table {
+    width: 100%;
+}
+
+.content {
+    display: flex;
+}
+
+
+
+#book-tickets {
+    display: flex;
+    /* margin: 20px 20px 20px 100px; */
+
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+
+
+}
+
+#book-tickets a {
+   width: 50%;
+    text-align: centers;
+    text-decoration: none;
+    background-color: blue;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #f8f8f8;
+    font-weight: 500;
+    display: block;
+
+}
+
+#book-tickets a:hover {
+
+
+    color: rgb(31, 28, 28);
+}
+
+@media(max-width:660px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .poster {
+        text-align: center;
+    }
+
+    .in4 {
+        margin: 20px;
+
+    }
+
+}

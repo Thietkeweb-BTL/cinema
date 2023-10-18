@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <title>Header</title>
+
+    <style>
+        * {
+            font-family: 'Oswald', Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            /* background-color:#fff4f6; */
+            background: color #f8f8f8;
+            
+            boder: 1px solid #fef6f6;
+            margin: 0;
+        }
+
+        header {
+            align-items: center;
+
+            background-color: black;
+    
+            color: white;
+            width: 100%;
+            text-decoration: none;
+        }
+
+        #header-right {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-grow: 1;
+        }
+
+        #header-right a {
+
+            text-decoration: none;
+            color: white;
+            text-align: right;
+        }
+
+
+        ul {
+            list-style-type: none;
+            align-items: center;
+            height: 90px;
+        }
+
+        nav {
+            /* background-color:#fff4f6; */
+            background-color: #f8f8f8;
+        }
+
+        #main-menu {
+            display: flex;
+            margin: 0;
+            /* background-color:#fff4f6; */
+            background-color: #f8f8f8;
+        }
+
+        nav #main-menu li a {
+            font-weight: 700;
+
+            color: #272222;
+            text-decoration: none;
+            display: block;
+            padding: 20px 12px;
+            text-transform: uppercase;
+        }
+
+        nav #main-menu li a:first-child {
+            margin-left: 30px;
+        }
+
+        nav #main-menu li:last-child(6) {
+            float: right;
+
+        }
+
+        nav #main-menu li:hover a {
+            color: #c23616;
+
+            transition: all 0.3s;
+        }
+
+        #logo {
+            display: flex;
+            flex-grow: 0;
+        }
+
+        #search-2 {
+            flex-basis: 200px;
+            width: 0;
+
+        }
+
+        input:hover {
+            background-color: #cecbca;
+            position: all 0.3;
+        }
+
+        #input input {
+            float: right;
+            padding: 12px 12px;
+            margin-top: 10px;
+            border: 1px solid #cac6c6;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        div#toggle {
+            margin: 0px;
+        }
+
+        #toggle {
+
+            display: none;
+            /* flex-grow: 1; */
+            color: #4f4040;
+            text-align: left;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #top-nav {
+            display: flex;
+            background: #FFAEBD;
+            justify-content: space-between;
+            height: 0;
+            visibility: hidden;
+
+        }
+
+        #search-1 {
+            font-size: 16px;
+            padding: 8px 10px;
+
+
+
+        }
+
+        #contain-search {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex-grow: 1;
+        }
+
+        #header {
+            display: flex;
+        }
+
+
+        @media screen and (max-width: 660px) {
+            #main-menu {
+                flex-direction: column;
+                text-align: left;
+
+            }
+            header{
+                width: 100%;
+            }
+            ul{
+                padding: 0px;
+            }
+
+            nav #main-menu li a {
+                padding: 12px;
+                font-size: 12px;
+            }
+
+
+
+            #toggle {
+                display: flex;
+                margin-left: 5px;
+            }
+
+            ul#main-menu li a:hover {
+                color: #e7d9d9;
+
+            }
+
+            nav {
+                display: none;
+            }
+
+            .main-cotent {
+                display: flex;
+            }
+
+            #contain-search {
+                /* display: none; */
+            }
+
+            #top-nav {
+                height: initial;
+                visibility: visible;
+            }
+           
+
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('nav').slideToggle();
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="logo">
+            <img src="./images/logo.png" alt="logo" style=" width: 30px; height: 50px;">
+        </div>
+        <div id="header-right">
+            <a href="">Đăng nhập</a> |
+            <a href="">Đăng ký</a>
+        </div>
+    </header>
+   
+    <div id="menu" style="position: sticky; top: 0px;">
+        <div id="top-nav">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <input id="search-2" text" placeholder="Tìm kiếm....">
+    
+        </div>
+        
+        <nav   >
+            <ul id="main-menu">
+                <li>
+                    <a href="">Trang chủ</a>
+                </li>
+                <li>
+                    <a href="./phim-dang-chieu/index.html" target="_blank">Phim</a>
+                </li>
+                <li>
+                    <a href="">Lịch chiếu</a>
+                </li>
+                <li>
+                    <a href="">Giá Vé</a>
+                </li>
+
+                <li>
+                    <a href="">tin mới và ưu đãi</a>
+                </li>
+                <li id="contain-search" style="flex-grow: 1; ">
+                    <input id="search-1" type="search" placeholder="Tìm Kiếm...">
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+
+</body>
+
+</html>

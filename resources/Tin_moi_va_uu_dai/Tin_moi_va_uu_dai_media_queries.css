@@ -1,6 +1,6 @@
 @media only screen and (min-width:200px) {
     .item img,.item1 img{
-        width: 431px;
+        width: 350px;
         height: 300px;
     }
     .col-lg-3{
@@ -9,7 +9,7 @@
     }
     .slide{
         height: 300px;
-        width: 431px;
+        width: 350px;
         margin: 0 auto;
     }
     .col{

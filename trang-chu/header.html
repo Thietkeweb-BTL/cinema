@@ -54,7 +54,7 @@
         ul {
             list-style-type: none;
             align-items: center;
-            height: 90px;
+        
         }
 
         nav {
@@ -74,6 +74,7 @@
         }
 
         nav #main-menu li a {
+            font-size: 18px;
             font-weight: 700;
 
             color: #272222;
@@ -83,14 +84,14 @@
             text-transform: uppercase;
         }
 
-        nav #main-menu li a:first-child {
+        /* nav #main-menu li a:first-child {
             margin-left: 30px;
-        }
+        } */
 
-        nav #main-menu li:last-child(6) {
+        /* nav #main-menu li:last-child(6) {
             float: right;
 
-        }
+        } */
 
         nav #main-menu li:hover a {
             color: #c23616;
@@ -158,8 +159,8 @@
         #contain-search {
             display: flex;
             align-items: center;
-            /* flex-direction: row-reverse; */
             flex-grow: 1;
+            margin-left: 42px;
         }
 
         #header {
@@ -171,6 +172,7 @@
             #main-menu {
                 flex-direction: column;
                 text-align: left;
+                background-color: #FFE0E6;
 
             }
             header{
@@ -178,6 +180,9 @@
             }
             ul{
                 padding: 0px;
+            }
+            #main-menu img{
+                display: none;
             }
 
             nav #main-menu li a {
@@ -198,6 +203,9 @@
             }
 
             nav {
+                /* display: none; */
+            }
+            #search-1{
                 display: none;
             }
 
@@ -240,7 +248,7 @@
             <div id="toggle">
                 <i class="fas fa-bars"></i>
             </div>
-            <input id="search-2" text" placeholder="Tìm kiếm....">
+            <!-- <input id="search-2 text" placeholder="Tìm kiếm...."> -->
     
         </div>
        
@@ -268,8 +276,8 @@
                 <li>
                     <a href="">ưu đãi</a>
                 </li>
-                <li id="contain-search" style="flex-grow: 1 ">
-                    <input id="search-1" type="search" size="18" placeholder="Tìm Kiếm...">
+                <li id="contain-search" style="flex-grow: 1  ">
+                    <input id="search-1" background-images type="search" size="18" placeholder="Tìm Kiếm...">
                 </li>
 
             </ul>

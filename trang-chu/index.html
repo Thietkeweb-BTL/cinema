@@ -7,15 +7,14 @@
     <title>Trang chủ|Rạp chiếu phim</title>
     <link rel="icon" href="images/logo.png" type="logo">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="main.js">
     <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Oswald">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
-<body>
-   
-    <iframe src="header.html" frameborder="0"  width="100%" style=" position: sticky; top: 0; height: 130px;"></iframe>
+<body onresize="resizeIfame()">
+    <iframe src="header.html" id="header" frameborder="0" width="100%"
+        style=" position: sticky; top: 0; height: 240px;"></iframe>
     <h2>Rạp Chiếu Phim Nhóm 2</h2>
     <iframe src="Slideshow.html" id="Slideshow"></iframe>
     </iframe>
@@ -27,29 +26,33 @@
         </div>
         <div class="contain-item">
             <div class="phim">
-                <img src="images/phim-dang-chieu-4.png" alt="phim_4">
+                <div class="contain-img"><img src="images/phim-dang-chieu-4.png" alt="phim_4"></div>
                 <div class="content-content">
-                    <a href="./phim-dang-chieu/chi-tiet-phim-4.html" target="_blank" title="Đang chuyển trang">Biệt Đội Đánh Thuê 4</a>
+                    <a href="./phim-dang-chieu/chi-tiet-phim-4.html" target="_blank" title="Đang chuyển trang">Biệt Đội
+                        Đánh Thuê 4</a>
                 </div>
-                
+
             </div>
 
             <div class="phim">
-                <img src="images/phim-dang-chieu-5.png" alt="phim_5">
+                <div class="contain-img"><img src="images/phim-dang-chieu-5.png" alt="phim_5"></div>
                 <div class="content-content">
-                    <a href="./phim-dang-chieu/chi-tiet-phim-5.html" target="_blank" title="Đang chuyển trang">Giao Lộ 8675</a>
+                    <a href="./phim-dang-chieu/chi-tiet-phim-5.html" target="_blank" title="Đang chuyển trang">Giao Lộ
+                        8675</a>
                 </div>
             </div>
             <div class="phim">
-                <img src="images/phim-dang-chieu-3.jpg" alt="phim_3">
+                <div class="contain-img"><img src="images/phim-dang-chieu-3.jpg" alt="phim_3"></div>
                 <div class="content-content">
-                    <a href="./phim-dang-chieu/chi-tiet-phim-3.html" target="_blank" title="Đang chuyển trang">Án Mạng VENICE</a>
+                    <a href="./phim-dang-chieu/chi-tiet-phim-3.html" target="_blank" title="Đang chuyển trang">Án Mạng
+                        VENICE</a>
                 </div>
             </div>
             <div class="phim">
-                <img src="images/phim-dang-chieu-2.png" alt="phim_1">
+                <div class="contain-img"><img src="images/phim-dang-chieu-2.png" alt="phim_1"></div>
                 <div class="content-content">
-                    <a href="./phim-dang-chieu/chi-tiet-phim-1.html" target="_blank" title="Đang chuyển trang">Quỷ Ám: Tín Đồ</a>
+                    <a href="./phim-dang-chieu/chi-tiet-phim-1.html" target="_blank" title="Đang chuyển trang">Quỷ Ám:
+                        Tín Đồ</a>
                 </div>
             </div>
 
@@ -63,68 +66,83 @@
         </div>
         <div class="contain-item">
             <div class="phim">
-                <img src="images/phim-sap-chieu-1.png" alt="phim_1">
+                <div class="contain-img"><img src="images/phim-sap-chieu-1.png" alt="phim_1">
+                </div>
                 <div class="content-content">
-                    <a href="./phim-sap-chieu/phim-sap-chieu-1.html" target="_blank" title="Đang chuyển trang">Biệt Đội Marvel</a>
+                    <a href="./phim-sap-chieu/phim-sap-chieu-1.html" target="_blank" title="Đang chuyển trang">Biệt Đội
+                        Marvel</a>
                 </div>
             </div>
             <div class="phim">
-                <img src="images/phim-sap-chieu-2.png" alt="phim_2">
+                <div class="contain-img"><img src="images/phim-sap-chieu-2.png" alt="phim_2">
+                </div>
                 <div class="content-content">
-                    <a href="./phim-sap-chieu/phim-sap-chieu-2.html" target="_blank" title="Đang chuyển trang">Người Vợ Cuối Cùng</a>
+                    <a href="./phim-sap-chieu/phim-sap-chieu-2.html" target="_blank" title="Đang chuyển trang">Người Vợ
+                        Cuối Cùng</a>
                 </div>
             </div>
             <div class="phim">
-                <img src="./images/phim-sap-chieu-3.png" alt="phim_3">
-                <div class="content-content">
-                    <a href="./phim-sap-chieu/phim-sap-chieu-3.html" target="_blank" title="Đang chuyển trang">Thành Phố Ngủ Gật</a>
+                <div class="contain-img"><img src="./images/phim-sap-chieu-3.png" alt="phim_3">
+                    <div class="content-content">
+                        <a href="./phim-sap-chieu/phim-sap-chieu-3.html" target="_blank" title="Đang chuyển trang">Thành
+                            Phố Ngủ Gật</a>
+                    </div>
                 </div>
             </div>
             <div class="phim">
-                <img src="images/phim-sap-chieu-4.png" alt="phim_4">
+                <div class="contain-img"><img src="images/phim-sap-chieu-4.png" alt="phim_4">
+                </div>
                 <div class="content-content">
-                    <a href="./phim-sap-chieu/phim-sap-chieu-4.html" target="_blank" title="Đang chuyển trang">Cú Máy Ăn Tiền</a>
+                    <a href="./phim-sap-chieu/phim-sap-chieu-4.html" target="_blank" title="Đang chuyển trang">Cú
+                        Máy Ăn Tiền</a>
                 </div>
             </div>
+
+        </div>
+        <div id="uu-dai" class="main-content">
+            <div class="content-title">
+                <h1>Ưu đãi</h1>
+                <a href="#" target="_blank" title="Đang chuyển trang">Xem tất cả</a>
+            </div>
+            <div class="contain-item">
+                <div class="phim">
+                    <div class="contain-img"><img src="images/uu-dai-1.png" alt="ưu-dãi-1">
+                    </div>
+                    <div class="content-content">
+                        <a href="#" target="_blank" title="Đang chuyển trang">Tích điểm bằng vani <br>Nhận bắp nước miễn
+                            phí</a>
+                    </div>
+                </div>
+                <div class="phim">
+                    <div class="contain-img"><img src="images/uu-dai-2.png" alt="ưu-đãi-2">
+                    </div>
+                    <div class="content-content">
+                        <a href="#" target="_blank" title="Đang chuyển trang">Thành viên BETA- đồng giá 45k/50k</a>
+                    </div>
+                </div>
+                <div class="phim">
+                    <div class="contain-img"><img src="./images/uu-dai-3.png" alt="ưu-dãi-3">
+                    </div>
+                    <div class="content-content">
+                        <a href="#" target="_blank" title="Đang chuyển trang">Thứ ba vui vẻ</a>
+                    </div>
+                </div>
+                <div class="phim">
+                    <div class="contain-img"><img src="images/uu-dai-4.png" alt="ưu-đãi-4">
+                    </div>
+                    <div class="content-content">
+                        <a href="#" target="_blank" title="Đang chuyển trang">Quét mã vnpay qr- giảm tới 20k</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div>
-    <div id="uu-dai" class="main-content">
-        <div class="content-title">
-            <h1>Ưu đãi</h1>
-            <a href="#" target="_blank" title="Đang chuyển trang">Xem tất cả</a>
-        </div>
-        <div class="contain-item">
-            <div class="phim">
-                <img src="images/uu-dai-1.png" alt="ưu-dãi-1">
-                <div class="content-content">
-                    <a href="#" target="_blank" title="Đang chuyển trang">Tích điểm bằng vani <br>Nhận bắp nước miễn phí</a>
-                </div>
-            </div>
-            <div class="phim">
-                <img src="images/uu-dai-2.png" alt="ưu-đãi-2">
-                <div class="content-content">
-                    <a href="#" target="_blank" title="Đang chuyển trang">Thành viên BETA- đồng giá 45k/50k</a>
-                </div>
-            </div>
-            <div class="phim">
-                <img src="./images/uu-dai-3.png" alt="ưu-dãi-3">
-                <div class="content-content">
-                    <a href="#" target="_blank" title="Đang chuyển trang">Thứ ba vui vẻ</a>
-                </div>
-            </div>
-            <div class="phim">
-                <img src="images/uu-dai-4.png" alt="ưu-đãi-4">
-                <div class="content-content">
-                    <a href="#" target="_blank" title="Đang chuyển trang">Quét mã vnpay qr- giảm tới 20k</a>
-                </div>
-            </div>
-        </div>
+        <iframe src="footer1.html" frameborder="0" width="100%"
+            style="height: 230px; border:2px soild #f392a4 ;"></iframe>
 
-    </div>
 
-    <iframe src="footer1.html" frameborder="0" width="100%" style="height: 230px; border:2px soild #f392a4 ;"></iframe>
-
+        <script src="main.js"></script>
 </body>
 
 </html>

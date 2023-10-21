@@ -8,5 +8,6 @@ function resizeIfame() {
 
 window.addEventListener('DOMContentLoaded', function(e) {
     // or, to resize all iframes:
+    this.document.body.setAttribute("onresize")="resizeIfame()"
     resizeIfame();
 } );

@@ -18,13 +18,8 @@
         body {
             /* background-color:#fff4f6; */
             background: color #FFE0E6;
-<<<<<<< HEAD:trang-chu/header.html
-
-            boder: 1px solid #fef6f6;
-=======
             
             border: 1px solid #fef6f6;
->>>>>>> 051ddbc5419699fd1054921414c8bc7a46f5071e:resources/Dung_chung/header.html
             margin: 0;
         }
 
@@ -32,7 +27,7 @@
             align-items: center;
 
             background-color: black;
-
+    
             color: white;
             width: 100%;
             text-decoration: none;
@@ -50,8 +45,7 @@
             color: white;
             text-align: right;
         }
-
-        ul#menu {
+        ul#menu{
             margin: 0;
             padding: 0;
         }
@@ -60,14 +54,13 @@
         ul {
             list-style-type: none;
             align-items: center;
-
+        
         }
 
         nav {
             /* background-color:#fff4f6; */
             background-color: #f8f8f8;
         }
-
         ul {
             padding: 0;
             margin: 0;
@@ -83,19 +76,27 @@
         nav #main-menu li a {
             font-size: 18px;
             font-weight: 700;
-            margin: 3px;
+
             color: #272222;
             text-decoration: none;
             display: block;
-            padding: 16px 12px;
+            padding: 20px 12px;
             text-transform: uppercase;
-            transition: 0.3s;
-            border-radius: 8px;
         }
 
+        /* nav #main-menu li a:first-child {
+            margin-left: 30px;
+        } */
+
+        /* nav #main-menu li:last-child(6) {
+            float: right;
+
+        } */
+
         nav #main-menu li:hover a {
-            /* color: #c23616; */
-            background-color: #ffaebd;
+            color: #c23616;
+
+            transition: all 0.3s;
         }
 
         #logo {
@@ -159,15 +160,14 @@
             display: flex;
             align-items: center;
             flex-grow: 1;
-            margin-left: 200px;
+            margin-left: 42px;
         }
 
         #header {
             display: flex;
         }
-        nav #main-menu li a{
-            font-size: 16px;
-        }
+
+
         @media screen and (max-width: 660px) {
             #main-menu {
                 flex-direction: column;
@@ -175,27 +175,21 @@
                 background-color: #FFE0E6;
 
             }
-            header {
+            header{
                 width: 100%;
             }
-
-            ul {
+            ul{
                 padding: 0px;
             }
-
-            #main-menu img {
+            #main-menu img{
                 display: none;
             }
 
             nav #main-menu li a {
                 padding: 12px;
-                font-size: 14px;
-                border-radius: 10px;
-                transition: 0.5s;
+                font-size: 12px;
             }
-            ul#main-menu li a:hover {
-                color: #e7d9d9;
-            }
+
 
 
             #toggle {
@@ -203,21 +197,31 @@
                 margin-left: 5px;
             }
 
+            ul#main-menu li a:hover {
+                color: #e7d9d9;
+
+            }
 
             nav {
                 /* display: none; */
+            }
+            #search-1{
+                display: none;
             }
 
             .main-cotent {
                 display: flex;
             }
 
+            #contain-search {
+                /* display: none; */
+            }
 
             #top-nav {
                 height: initial;
                 visibility: visible;
             }
-
+           
 
         }
     </style>
@@ -227,60 +231,35 @@
                 $('nav').slideToggle();
             });
         })
-
-        window.addEventListener('resize', function () {
-            // Lấy chiều rộng hiện tại của màn hình
-            const screenWidth = window.innerWidth;
-
-            // Tính toán chiều rộng mới cho input (theo logic của bạn)
-            let newInputWidth = 50; // Giá trị mặc định
-            if (screenWidth <= 600) {
-                newInputWidth = 80;
-            }
-            if (screenWidth <= 400) {
-                newInputWidth = 100;
-            }
-
-            // Áp dụng chiều rộng mới vào input
-            const inputElement = document.querySelector('input');
-            inputElement.style.width = `${newInputWidth}%`;
-        });
-
     </script>
 </head>
 
 <body>
 
-    <header id="header">
+    <header id="header">  
         <div id="header-right">
-            <a href="">Đăng ký</a> |
-            <a href="">Đăng nhập</a>
+            <a href="">Đăng nhập</a> |
+            <a href="">Đăng ký</a>
         </div>
     </header>
-
+   
     <div id="menu" style="position: sticky; top: 0px;">
         <div id="top-nav">
             <div id="toggle">
                 <i class="fas fa-bars"></i>
             </div>
-
+            <!-- <input id="search-2 text" placeholder="Tìm kiếm...."> -->
+    
         </div>
-
-        <nav>
-
+       
+        <nav   >
+            
 
             <ul id="main-menu">
-<<<<<<< HEAD:trang-chu/header.html
-
-                <img src="./images/logo.png" alt="logo" style="height: 55px; padding: 5px 10px;">
-
-
-=======
                 
                     <img src="../img/logo.png" alt="logo" style=" ">
                 
                 
->>>>>>> 051ddbc5419699fd1054921414c8bc7a46f5071e:resources/Dung_chung/header.html
                 <li>
                     <a href="../../index.html " target="_blank">Trang chủ</a>
                 </li>
@@ -297,7 +276,9 @@
                 <li>
                     <a href="../Tin_moi_va_uu_dai/Tin_moi_va_uu_dai.html" target="_blank">Tin mới và ưu đãi</a>
                 </li>
-                
+                <li id="contain-search" style="flex-grow: 1  ">
+                    <input id="search-1" background-images type="search" size="18" placeholder="Tìm Kiếm...">
+                </li>
 
             </ul>
         </nav>

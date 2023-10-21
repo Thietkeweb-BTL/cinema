@@ -1,2 +1,2 @@
 # cinema
-https://thietkeweb-btl.github.io/cinema/trang-chu/index.html
+https://thietkeweb-btl.github.io/cinema/index.html

@@ -21,6 +21,8 @@
             flex-grow: 1;
             width: 0;
         }
+        #chinh-sach p{ margin-left: 50px; margin-right: 10px; font-weight: 200;}
+        
 
         h3 {
 
@@ -29,7 +31,7 @@
         }
 
         .content-left ul {
-            margin-left: 90px;
+            margin-left: 24px;
         }
 
         .content-left ul li {
@@ -39,7 +41,7 @@
         }
 
         #icon {
-            margin-left: 110px;
+            margin-left: 53px;
             margin-bottom: 10px;
 
         }
@@ -84,11 +86,10 @@
             transform: scale(1.2);
         }
         .table {
-            margin-left: 110px;
+            margin-left: 50px;
         }
 
-        .table input,
-        textarea {
+        .table input,textarea {
             margin-left: 30px;
             border: none;
             border-radius: 3px;
@@ -100,6 +101,7 @@
         .table input:focus {
             border-radius: 0;
         }
+       
 
         .feedback {
             /* color: #f8f8f8;
@@ -115,7 +117,7 @@
         #send-it {
 
             margin-top: 15px;
-            margin-left: 110px;
+            margin-left: 50px;
             padding: 8px 12px;
 
             margin-bottom: 20px;
@@ -151,16 +153,19 @@
             }
 
             .content-left ul {
-                margin-left: 90px;
+                margin-left: 24px;
             }
 
             #icon {
-                margin-left: 120px;
+                margin-left: 50px;
+            }
+            .table{
+                margin-left: 50px;
             }
 
             .table input,
             textarea {
-                margin-left: 100px;
+                margin-left: 50px;
                 border: none;
                 border-radius: 3px;
                 margin: 1px;
@@ -178,10 +183,18 @@
 </head>
 
 <body>
+    <div id="chinh-sach">
+        <h3>Chính Sách</h3>
+        <p> >> Cơ quan chủ quan Bộ Văn Hóa Thể Thao và Du Lịch</p>
+        <p> >> Bản quyền thuộc trung tâm rạp chiếu phim Traffic Cinema</p>
+        <!-- <p> >> Nhượng quyền liên hệ nhóm 2- rạp phim Traffic Cinema</p> -->
+        <p> >> Địa chỉ: Số 3 cầu giấy, quận Cầu Giấy, Tp Hà Nội</p>
+        
+    </div>
 
     <div class="content-left">
         <div id="member" style="height: 170px;">
-            <h3>Liên Hệ:</h3>
+            <h3>Liên Hệ</h3>
             <ul>
                 <li>Lê Thanh Huyền</li>
                 <li>Nguyễn Thị Phương Anh</li>
@@ -218,19 +231,19 @@
 
     <div class="feedback" style="height: 100vh;">
         <div>
-            <h3>Feedback:</h3>
+            <h3>Feedback</h3>
         </div>
         <table class="table">
             <tr>
                 <td style="margin-left: 5px;">Name:</td>
                 <td>
-                    <input type="text" name="name" placeholder="Your name" size="20" style="background-color: #FFE0E6;">
+                    <input type="text" name="name" placeholder="Your name"  style="background-color: #FFE0E6;">
                 </td>
             </tr>
             <tr>
                 <td style="margin-left: 5px;">Email:</td>
                 <td>
-                    <input type="email" name="" id="" placeholder="email" size="20" style="background-color: #FFE0E6;">
+                    <input type="email" name="" id="" placeholder="email" style="background-color: #FFE0E6;">
                 </td>
             </tr>
             <tr>
@@ -246,6 +259,7 @@
         <input id="send-it" type="submit" onclick="SubmitEvent" value="SEND IT"
             style="text-align: center; color: white; font-weight: 500;">
     </div>
+    
 
 </body>
 

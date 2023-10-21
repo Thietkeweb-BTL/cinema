@@ -4,6 +4,15 @@ body {
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
     min-width: 400px;
 }
+#header{
+    height: 100px;
+}
+@media(max-width:660px) {
+    #header{
+        height: 240px;
+    }
+    
+}
 
 a {
     text-decoration: none;

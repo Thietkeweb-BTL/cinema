@@ -3,40 +3,67 @@ body {
     margin: 0px;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
+#nav{
+    height: 100px;
+}
+
+#top-nav{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    /* background-color: #ffffff; */
+    border: none;
+}
+#top-nav li{
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+   
+    
+}
+#top-nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    padding: 20px 12px;
+    border-radius: 0.5;
+}
+
+#top-nav li a:hover{
+    color: #FFAEBE;
+    text-decoration: underline;
+    transition: 0.3;
+}
+
 
 a {
     text-decoration: none;
-    min-width: 400px;
 }
 
 
-/* header {
-    text-align: right;
-    color: white;
-    background-color: black;
-    width: 100%;
-}
-
-nav img {
-
-    border: 0;
-    vertical-align: middle;
-
-} */
-
-/* @media(min-width:506px) {
-    .logo {
-        font-weight: 400;
-        float: left;
-        height: 8wh;
-        width: 8vw;
-        margin-right: 50px;
-
+@media (max-width:885px){
+    #top-nav ul li a{
+        font-size: 20px;
+        padding: 0px;
     }
-
+}
+@media (max-width:768px){
+    #top-nav ul li a{
+        font-size: 18px;
+        padding:0px;
+    }
 }
 
-@media (max-width:505px) {
+@media (max-width:660px) {
+    #nav{
+        height: 240px;
+    }
+    #top-nav ul li a{
+        font-size: 16px;
+        padding: 0px;
+    }
     .logo {
         float: left;
         height: 33vh;
@@ -48,14 +75,14 @@ nav img {
 header a {
     color: white;
 
-} */
+} 
 
 nav {
     display: flex;
-    box-shadow: 0 0 5px 0;
-    position: sticky;
-    top: 0px;
-    background-color: #ae7789;
+    /* box-shadow: 0px 0 5px 0; */
+    /* position: sticky;
+    top: 0px; */
+    /* background-color: #f8f8f8; */
 
 
 
@@ -90,7 +117,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: plum;
+    color:  #FFAEBE;
 }
 
 

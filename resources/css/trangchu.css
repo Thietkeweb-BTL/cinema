@@ -188,6 +188,7 @@ iframe {
 .content-content a {
     font-size: 18px;
     color: #3783BE;
+    text-transform: uppercase;
 }
 
 footer {

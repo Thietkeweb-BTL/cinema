@@ -1,6 +1,6 @@
 h4{
-    margin-top: 2%;
-    margin-bottom: 2%;
+  
+    margin-bottom: 3%;
 }
 .img-title img{
     width: 100%;
@@ -8,7 +8,7 @@ h4{
     margin-bottom: 2%;
     box-shadow: 2px 1px 8px 3px rgba(128, 128, 128, 0.79);
     height: 100vh;
-    object-fit: cover;
+    
 }
 .dieukien ul{
     line-height: 256%;

@@ -34,14 +34,14 @@
                 <div>
                     <label for="name_user" class="time_film">Thời gian: </label>
                     <div>
-                        <button type="button" class="btn  color-button">17:45</button>
-                        <button type="button" class="btn  color-button">18:30</button>
-                        <button type="button" class="btn  color-button">9:30</button>
+                        <button type="button" class="btn  color-button" onclick="myFunction1()">17:45</button>
+                        <button type="button" class="btn  color-button" onclick="myFunction2()">18:30</button>
+                        <button type="button" class="btn  color-button" onclick="myFunction3()">9:30</button>
                     </div>
                 </div>
                 <div>
                     <label for="day" class="day_film">Chọn Ngày</label>
-                    <select name="day" id="day" onchange="myFunction()" style="height: 30px; width: 200px">
+                    <select name="day" id="day" onchange="myFunction4()" style="height: 30px; width: 200px">
                         <option></option>
                         <option value="Thứ 2, 10/11/2023">Thứ 2, 10/11/2023</option>
                         <option value="Thứ 3, 11/11/2023">Thứ 3, 11/11/2023</option>
@@ -296,12 +296,13 @@
 
             <div class=" col-xl-3 col-sm-12 card-final">
                 <div class=" card-item-1">
-                    <p class="mb-1"><input type="text" id="name" size="20"></p>
-                    <p class="mb-1">Trafic Cinema Hà Nội</p>
+                    <label id="name" class="mb-1"></label>
+                    <p class="mb-1"><b>Trafic Cinema Hà Nội</b></p>
                     <p class="mb-1">Suất chiếu:
-                        <strong>11:30 13/11/2023</strong>
+                        <strong> <label id="thoi_gian"></label> 
+                        <label id="ngay_chieu"></label>
                     </p>
-                    <p class="mb-0">Phòng chiếu: <strong>P3</strong> - Ghế <label id="seat">0</label>
+                    <p class="mb-0">Phòng chiếu: <strong>P3</strong> - Số lượng: <label id="seat">0</label>
                     <p>
                 </div>
                 <div class="card-item-2 ">
@@ -310,7 +311,7 @@
                 </div>
                 <br>
                 <div class=" card-item-3">
-                    <button class="btn btn-secondary" type="button">Thanh toán</button>
+                    <button class="btn btn-secondary" type="button" id="thanh_toan">Thanh toán</button>
                 </div>
             </div>
         </div>
@@ -319,11 +320,15 @@
     <script>
         function myFunction() {
             var name_of_film = document.getElementById("name_film")
-            document.getElementById("name").value = name_film.options[name_film.selectedIndex].text;
+            document.getElementById("name").innerHTML = name_film.options[name_film.selectedIndex].text;
 
             // var name_of_film = document.getElementById("name_film")
             // document.getElementById("name").value = name_film.options[name_film.selectedIndex].text;
         }
+        function myFunction4(){
+                var day_of_film = document.getElementById("day")
+                document.getElementById("ngay_chieu").innerHTML = day.options[day.selectedIndex].text;
+            }
         let a = document.querySelectorAll("input");
         let count = 0, s = 0;
         let price = 50;
@@ -348,6 +353,19 @@
             s = 0;
         }
         setInterval(changechair, 1000);
+
+        function myFunction1(){
+                document.getElementById("thoi_gian").innerHTML="17:45";
+            }
+        function myFunction2(){
+                document.getElementById("thoi_gian").innerHTML="18:30";
+            }
+        function myFunction3(){
+                document.getElementById("thoi_gian").innerHTML="9:30";
+            }
+        document.getElementById("thanh_toan").addEventListener("click",()=>{
+            alert("Thanh toan thanh cong");
+        });
     </script>
 
     <iframe src="../Dung_chung/footer.html" frameborder="0" width="100%"

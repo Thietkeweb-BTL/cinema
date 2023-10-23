@@ -162,3 +162,36 @@ input:focus {
         padding-left: 88px;
     }
 }
+
+@media (max-width:990px){
+    .seats .ghengoi{
+        margin-left: -58px;
+    }
+    .infor{
+        display: flex;
+    flex-wrap: nowrap;
+    }
+}
+
+@media (max-width:766px){
+    .infor{
+        display: block;
+    }
+    .film_select {
+        margin-bottom: 28px;
+    }
+
+    .time_select{
+        margin-bottom: 40px;
+        margin-right: 77px;
+    }
+    .seats .ghengoi{
+        width: 170%;
+        margin-left: -107px;
+    }
+    .seats{
+        width: 130%;
+        
+    }
+    
+}

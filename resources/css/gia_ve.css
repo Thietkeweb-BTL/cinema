@@ -1,7 +1,8 @@
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
-.size-text{
+
+.size-text {
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-transform: capitalize;
@@ -19,7 +20,7 @@ body {
     -moz-text-fill-color: transparent;
 }
 
-.color-content{
+.color-content {
     background-color: rgb(153, 121, 72);
 }
 
@@ -29,41 +30,44 @@ body {
     margin-left: 44px;
 } */
 
-.round{
+.round {
     border-style: double;
     padding: 4%;
     border-radius: 1%;
 }
-.sidebar-two{
+
+.sidebar-two {
     margin-top: 13%;
 }
 
-.border-line{
-    text-align: center;    
+.border-line {
+    text-align: center;
     border: 2px solid #000000;
     font-weight: 400;
     padding: 5px;
 }
-.border-line-1{
+
+.border-line-1 {
     width: 100%;
     border: 2px solid;
     background-color: rgb(255, 252, 248);
 }
 
-tr:hover{
+tr:hover {
     background-color: rgb(237, 235, 235);
     color: rgb(98, 175, 242);
 }
 
 
 @media (min-width: 1200px) {
-        .note{
-            flex: 0 0 auto;
-           width: 100%;
-            margin-left: 46px;
-            padding-top: 26px;
-        }
+    .note {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-left: 46px;
+        padding-top: 26px;
+    }
 }
+
 ul {
     list-style-type: none;
     align-items: center;

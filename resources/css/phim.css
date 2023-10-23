@@ -3,25 +3,28 @@ body {
     margin: 0px;
     font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
-#nav{
+
+#nav {
     height: 100px;
 }
 
-#top-nav{
+#top-nav {
     display: flex;
     align-items: center;
     height: 80px;
     /* background-color: #ffffff; */
     border: none;
 }
-#top-nav li{
+
+#top-nav li {
     display: flex;
     list-style: none;
     margin-left: 30px;
-   
-    
+
+
 }
-#top-nav ul li a{
+
+#top-nav ul li a {
     text-transform: capitalize;
     text-decoration: none;
     font-size: 25px;
@@ -31,7 +34,7 @@ body {
     border-radius: 0.5;
 }
 
-#top-nav li a:hover{
+#top-nav li a:hover {
     color: #FFAEBE;
     text-decoration: underline;
     transition: 0.3;
@@ -44,27 +47,30 @@ a {
 
 
 
-@media (max-width:885px){
-    #top-nav ul li a{
+@media (max-width:885px) {
+    #top-nav ul li a {
         font-size: 20px;
         padding: 0px;
     }
 }
-@media (max-width:768px){
-    #top-nav ul li a{
+
+@media (max-width:768px) {
+    #top-nav ul li a {
         font-size: 18px;
-        padding:0px;
+        padding: 0px;
     }
 }
 
 @media (max-width:660px) {
-    #nav{
+    #nav {
         height: 240px;
     }
-    #top-nav ul li a{
+
+    #top-nav ul li a {
         font-size: 16px;
         padding: 0px;
     }
+
     .logo {
         float: left;
         height: 33vh;
@@ -76,7 +82,7 @@ a {
 header a {
     color: white;
 
-} 
+}
 
 nav {
     display: flex;
@@ -93,7 +99,7 @@ nav {
 nav ul {
     display: flex;
     padding: 0px;
-    flex-wrap: wrap;
+    margin: 0 auto;
 
 
 
@@ -118,7 +124,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color:  #FFAEBE;
+    color: #FFAEBE;
 }
 
 
@@ -142,8 +148,9 @@ ul li a:hover {
     flex-direction: row-reverse;
 
 }
-.content-title a:hover{
-    color:#ae7789;
+
+.content-title a:hover {
+    color: #ae7789;
     text-decoration: underline;
 }
 
@@ -190,4 +197,17 @@ iframe {
 footer {
     width: 100%;
     height: 30vh;
+}
+p{
+    font-size: 15px;
+}
+@media(max-width:725px){
+    .content-content{
+        height: 45px;
+    }
+}
+@media(max-width:450px){
+    .content-content{
+        height: 60px;
+    }
 }

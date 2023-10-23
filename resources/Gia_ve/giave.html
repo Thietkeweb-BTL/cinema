@@ -1,204 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/gia_ve.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <title>GIÁ VÉ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../css/gia_ve.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <title>GIÁ VÉ</title>
 </head>
+
 <body>
 
-        <!--Header-->  
-        <iframe src="../Dung_chung/header.html" frameborder="0"  width="100%" style=" position: sticky; top: 0; height: 130px;"></iframe>
-        <!--Ticket Princes-->
-        <div class=" column-layout container ">
-            <div class=" row column-item sidebar-one mx-5">
-            <div class=" mt-4 col-xl-8  ">
-                <!--Title-->
-                <div class="Price">
-                    <div class="text-center">
-                        <h1 class="size-text"><strong>Giá vé</strong></h1>
-                        <p>(Áp dụng từ ngày 04/10/2023)</p>
-                    </div> 
-                </div>
-                <ul style="text-align: justify;">
-                    <li style="font-weight: 400; font-size: 25px; " aria-level="1"><span style="font-weight: bold; margin-left: -32px;">Đối với vé 2D</span></li>
-                    </ul>
-                    <table class="border-line-1"  > 
-                    <tbody>
-                    <tr style="border: 2px solid black;">
-                    <th class="border-line" colspan="2" rowspan="2"><b>Thời gian</b></th>
-                    <th class="border-line" colspan="4"><b>Ghế thường</b></th>
-                    </tr>
-                    <tr >
-                    <th class="border-line"  ><b>Người lớn</b></th>
-                    <th class="border-line"><b>Người cao tuổi, trẻ em</b></th>
-                    <th class="border-line"><b>Sinh viên</b></th>
-                    <th class="border-line"><b>Thành viên</b></th>
-                    </tr>
-                    <tr >
-                    <td rowspan="3" class="border-line">Thứ 2, thứ 4 và thứ 5</td>
-                    <td class="border-line">Suất chiếu đầu</td>
-                    <td class="border-line">60.000 VNĐ/vé</td>
-                    <td class="border-line" rowspan="2">50.000 VNĐ/vé</td>
-                    <td class="border-line">45.000 VNĐ/vé</td>
-                    <td class="border-line">50.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td class="border-line">Suất chiếu trước 17h</td>
-                    <td class="border-line">70.000 VNĐ/vé</td>
-                    <td class="border-line" colspan="2">45.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td class="border-line">Suất chiếu sau 17h</td>
-                    <td class="border-line">80.000 VNĐ/vé</td>
-                    <td class="border-line">60.000 VNĐ/vé</td>
-                    <td class="border-line" colspan="2">45.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td colspan="2" class="border-line">Thứ 3</td>
-                    <td class="border-line" colspan="4">45.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td rowspan="3" class="border-line">Thứ 6, thứ 7, Chủ nhật và ngày lễ</td>
-                    <td class="border-line">Suất chiếu đầu</td>
-                    <td class="border-line">70.000 VNĐ/vé</td>
-                    <td class="border-line" rowspan="2">60.000 VNĐ/vé</td>
-                    <td class="border-line">70.000 VNĐ/vé</td>
-                    <td class="border-line" rowspan="3">45.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td class="border-line">Suất chiếu trước 17h</td>
-                    <td class="border-line">80.000 VNĐ/vé</td>
-                    <td class="border-line">80.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td class="border-line">Suất chiếu sau 17h</td>
-                    <td class="border-line">90.000 VNĐ/vé</td>
-                    <td class="border-line">70.000 VNĐ/vé</td>
-                    <td class="border-line">90.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                    <td colspan="2" class="border-line">Thứ 2 cuối cùng của tháng</td>
-                    <td class="border-line" colspan="4">45.000 VNĐ/vé</td>
-                    </tr>
-                    </tbody>
-                    </table>
-
-                <ul style="text-align: justify; margin-top: 45px;">
-                    <li style="font-weight: 400; font-size: 25px;" aria-level="1"><span style="font-weight: bold; margin-left: -32px;">Đối với vé 3D</span></li>
-                    </ul>   
-                <table class="border-line-1" >
-                    <tr>
-                        <th class="border-line" style="width: 56.4257%;" colspan="2"><b>Thời gian</b></th>
-                        <th class="border-line" style="width: 42.8715%;"><b>Tất cả các đổi tượng</b></th>
-                    </tr>
-                    <tr>
-                        <td class="border-line" rowspan="4">Thứ 2, thứ 4, thứ 5</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line" >Suất chiếu đầu</td>
-                        <td class="border-line">80.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line">Suất chiếu trước 17h</td>
-                        <td class="border-line">100.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line">Suất chiếu sau 17h</td>
-                        <td class="border-line">120.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line" colspan="2">Thứ 3</td>
-                        <td class="border-line"> 90.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line" rowspan="4">Thứ 6, thứ 7, Chủ nhật và ngày lễ</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line">Suất chiếu đầu</td>
-                        <td class="border-line">100.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line">Suất chiếu trước 17h</td>
-                        <td class="border-line">120.000 VNĐ/vé</td>
-                    </tr>
-                    <tr>
-                        <td class="border-line">Suất chiếu sau 17h</td>
-                        <td class="border-line">150.000 VNĐ/vé</td>
-                    </tr>
-                </table>
-            </div>
-        <!--Text-right-->
-
-        <div class="column-item sidebar-two  col-xl-3 col-sm-12">
-            <div class="note">
-                <h4><strong>Ghi chú :</strong></h4>
-                <div class="round mb-4">
-
-                <ul class="list-unstyled">
-                    <li>- Bảng giá trên áp dụng cho khách hàng có thẻ thành viên, khách hàng không có thẻ thành viên phụ thu 10.000đ/vé đối với ghế thường, 20.000đ/vé đối với ghế đôi</li> <br>
-                    <li>- Bảng giá trên áp dụng cho suất chiếu thông thường, suất chiếu sớm (suất chiếu đặc biệt, suất chiếu sneakshow) phụ thu 10.000đ/vé đối với ghế thường, 20.000đ/vé đối với ghế đôi</li> <br>
-                    <li>- Giá vé khi đặt vé trực tuyến trên website và ứng dụng Touch Cinema là giá vé người lớn</li><br>
-                    <li>- Giá vé học sinh, sinh viên được áp dụng cho người từ 22 tuổi trở xuống khi mua vé tại quầy</li><br>
-                    <li>- Giá vé trẻ em, người cao tuổi, đối tượng ưu tiên áp dụng cho trẻ em, người từ 60 tuổi trở lên, người có công với cách mạng, người có hoàn cảnh đặc biệt khó khăn và các đối tượng khác theo quy định của pháp luật khi mua vé tại quầy</li><br>
-                    <li>- Người khuyết tật đặc biệt nặng được miễn giá vé, người khuyết tật nặng được giảm 50% giá vé khi mua vé tại quầy</li>
-                  </ul>
-                </div>
-            </div>
+  <!--Header-->
+  <iframe src="../Dung_chung/header.html" frameborder="0" width="100%"
+    style=" position: sticky; top: 0; height: 130px;"></iframe>
+  <!--Ticket Princes-->
+  <div class=" column-layout container ">
+    <div class=" row column-item sidebar-one mx-5">
+      <div class=" mt-4 col-xl-8  ">
+        <!--Title-->
+        <div class="Price">
+          <div class="text-center">
+            <h1 class="size-text"><strong>Giá vé</strong></h1>
+            <p>(Áp dụng từ ngày 04/10/2023)</p>
+          </div>
         </div>
-        <!--Tin tức nổi bật-->
+        <ul style="text-align: justify;">
+          <li style="font-weight: 400; font-size: 25px; " aria-level="1"><span
+              style="font-weight: bold; margin-left: -32px;">Đối với vé 2D</span></li>
+        </ul>
+        <table class="border-line-1">
+          <tbody>
+            <tr style="border: 2px solid black;">
+              <th class="border-line" colspan="2" rowspan="2"><b>Thời gian</b></th>
+              <th class="border-line" colspan="4"><b>Ghế thường</b></th>
+            </tr>
+            <tr>
+              <th class="border-line"><b>Người lớn</b></th>
+              <th class="border-line"><b>Người cao tuổi, trẻ em</b></th>
+              <th class="border-line"><b>Sinh viên</b></th>
+              <th class="border-line"><b>Thành viên</b></th>
+            </tr>
+            <tr>
+              <td rowspan="3" class="border-line">Thứ 2, thứ 4 và thứ 5</td>
+              <td class="border-line">Suất chiếu đầu</td>
+              <td class="border-line">60.000 VNĐ/vé</td>
+              <td class="border-line" rowspan="2">50.000 VNĐ/vé</td>
+              <td class="border-line">45.000 VNĐ/vé</td>
+              <td class="border-line">50.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td class="border-line">Suất chiếu trước 17h</td>
+              <td class="border-line">70.000 VNĐ/vé</td>
+              <td class="border-line" colspan="2">45.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td class="border-line">Suất chiếu sau 17h</td>
+              <td class="border-line">80.000 VNĐ/vé</td>
+              <td class="border-line">60.000 VNĐ/vé</td>
+              <td class="border-line" colspan="2">45.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="border-line">Thứ 3</td>
+              <td class="border-line" colspan="4">45.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td rowspan="3" class="border-line">Thứ 6, thứ 7, Chủ nhật và ngày lễ</td>
+              <td class="border-line">Suất chiếu đầu</td>
+              <td class="border-line">70.000 VNĐ/vé</td>
+              <td class="border-line" rowspan="2">60.000 VNĐ/vé</td>
+              <td class="border-line">70.000 VNĐ/vé</td>
+              <td class="border-line" rowspan="3">45.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td class="border-line">Suất chiếu trước 17h</td>
+              <td class="border-line">80.000 VNĐ/vé</td>
+              <td class="border-line">80.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td class="border-line">Suất chiếu sau 17h</td>
+              <td class="border-line">90.000 VNĐ/vé</td>
+              <td class="border-line">70.000 VNĐ/vé</td>
+              <td class="border-line">90.000 VNĐ/vé</td>
+            </tr>
+            <tr>
+              <td colspan="2" class="border-line">Thứ 2 cuối cùng của tháng</td>
+              <td class="border-line" colspan="4">45.000 VNĐ/vé</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <div class="row gap-2 ">
-            <div>
-                <h2 style="margin-top: 15px;">Thông tin bổ sung: </h2>
-            </div>
-            <div class="col">
-              <div class="card border-0 ">
-                <img class="card-img-top"
-                  src="../img/quang-trung-2-101450-180923-97.jpg" alt="Title">
-                <div class="card-body mt-3">
-                  <h6 class="card-title text-center"><a class="list-group-item fw-bold" href="../Tin_moi_va_uu_dai/Tinmoi/Tin3.html">4 RẠP BETA CINEMAS LỌT TOP 11 RẠP CHIẾU PHIM ĐÔNG KHÁCH NHẤT CẢ NƯỚC</a></h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-                <img class="card-img-top"
-                  src="../img/z4611757934475-e7236d1ce95b25ef9111ad0afbb1d5a4-151848-170823-16.jpg" alt="Title">
-                <div class="card-body mt-3">
-                  <h6 class="card-title text-center"><a class="list-group-item fw-bold" href="../Tin_moi_va_uu_dai/Tinmoi/Tin4.html">BETA CINEMAS TĂNG TRƯỞNG NHANH SAU ĐẠI DỊCH</a></h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0 ">
-                <img class="card-img-top"
-                  src="../img/z4611429882863-074c90bd27ea8469f9a5beff63986345-133039-170823-41.jpg" alt="Title">
-                <div class="card-body mt-3">
-                  <h6 class="card-title text-center"><a class="list-group-item fw-bold" href="../Tin_moi_va_uu_dai/Tinmoi/Tin5.html">BETA CINEMAS: LỰA CHỌN SINH LỜI CHO NHÀ ĐẦU TƯ RẠP CHIẾU PHIM</a></h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card border-0">
-                <img class="card-img-top"
-                  src="../img/anh-rap-qt-141126-160823-74.jpg" alt="Title">
-                <div class="card-body mt-3">
-                  <h6 class="card-title text-center"><a class="list-group-item fw-bold" href="../Tin_moi_va_uu_dai/Tinmoi/Tin6.html">RẠP CHIẾU PHIM BETA CINEMAS “VƯỢT BÃO” COVID VÀ SUY THOÁI NHỜ LỐI ĐI KHÁC BIỆT</a></h6>
-                </div>
-              </div>
+        <ul style="text-align: justify; margin-top: 45px;">
+          <li style="font-weight: 400; font-size: 25px;" aria-level="1"><span
+              style="font-weight: bold; margin-left: -32px;">Đối với vé 3D</span></li>
+        </ul>
+        <table class="border-line-1">
+          <tr>
+            <th class="border-line" style="width: 56.4257%;" colspan="2"><b>Thời gian</b></th>
+            <th class="border-line" style="width: 42.8715%;"><b>Tất cả các đổi tượng</b></th>
+          </tr>
+          <tr>
+            <td class="border-line" rowspan="4">Thứ 2, thứ 4, thứ 5</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu đầu</td>
+            <td class="border-line">80.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu trước 17h</td>
+            <td class="border-line">100.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu sau 17h</td>
+            <td class="border-line">120.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line" colspan="2">Thứ 3</td>
+            <td class="border-line"> 90.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line" rowspan="4">Thứ 6, thứ 7, Chủ nhật và ngày lễ</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu đầu</td>
+            <td class="border-line">100.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu trước 17h</td>
+            <td class="border-line">120.000 VNĐ/vé</td>
+          </tr>
+          <tr>
+            <td class="border-line">Suất chiếu sau 17h</td>
+            <td class="border-line">150.000 VNĐ/vé</td>
+          </tr>
+        </table>
+      </div>
+      <!--Text-right-->
+
+      <div class="column-item sidebar-two  col-xl-3 col-sm-12">
+        <div class="note">
+          <h4><strong>Ghi chú :</strong></h4>
+          <div class="round mb-4">
+
+            <ul class="list-unstyled">
+              <li>- Bảng giá trên áp dụng cho khách hàng có thẻ thành viên, khách hàng không có thẻ thành viên phụ thu
+                10.000đ/vé đối với ghế thường, 20.000đ/vé đối với ghế đôi</li> <br>
+              <li>- Bảng giá trên áp dụng cho suất chiếu thông thường, suất chiếu sớm (suất chiếu đặc biệt, suất chiếu
+                sneakshow) phụ thu 10.000đ/vé đối với ghế thường, 20.000đ/vé đối với ghế đôi</li> <br>
+              <li>- Giá vé khi đặt vé trực tuyến trên website và ứng dụng Touch Cinema là giá vé người lớn</li><br>
+              <li>- Giá vé học sinh, sinh viên được áp dụng cho người từ 22 tuổi trở xuống khi mua vé tại quầy</li><br>
+              <li>- Giá vé trẻ em, người cao tuổi, đối tượng ưu tiên áp dụng cho trẻ em, người từ 60 tuổi trở lên, người
+                có công với cách mạng, người có hoàn cảnh đặc biệt khó khăn và các đối tượng khác theo quy định của pháp
+                luật khi mua vé tại quầy</li><br>
+              <li>- Người khuyết tật đặc biệt nặng được miễn giá vé, người khuyết tật nặng được giảm 50% giá vé khi mua
+                vé tại quầy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Tin tức nổi bật-->
+
+      <div class="row gap-2 ">
+        <div>
+          <h2 style="margin-top: 15px;">Thông tin bổ sung: </h2>
+        </div>
+        <div class="col">
+          <div class="card border-0 ">
+            <img class="card-img-top" src="../img/quang-trung-2-101450-180923-97.jpg" alt="Title">
+            <div class="card-body mt-3">
+              <h6 class="card-title text-center"><a class="list-group-item fw-bold"
+                  href="../Tin_moi_va_uu_dai/Tinmoi/Tin3.html">4 RẠP BETA CINEMAS LỌT TOP 11 RẠP CHIẾU PHIM ĐÔNG KHÁCH
+                  NHẤT CẢ NƯỚC</a></h6>
             </div>
           </div>
         </div>
-        
+        <div class="col">
+          <div class="card border-0">
+            <img class="card-img-top" src="../img/z4611757934475-e7236d1ce95b25ef9111ad0afbb1d5a4-151848-170823-16.jpg"
+              alt="Title">
+            <div class="card-body mt-3">
+              <h6 class="card-title text-center"><a class="list-group-item fw-bold"
+                  href="../Tin_moi_va_uu_dai/Tinmoi/Tin4.html">BETA CINEMAS TĂNG TRƯỞNG NHANH SAU ĐẠI DỊCH</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 ">
+            <img class="card-img-top" src="../img/z4611429882863-074c90bd27ea8469f9a5beff63986345-133039-170823-41.jpg"
+              alt="Title">
+            <div class="card-body mt-3">
+              <h6 class="card-title text-center"><a class="list-group-item fw-bold"
+                  href="../Tin_moi_va_uu_dai/Tinmoi/Tin5.html">BETA CINEMAS: LỰA CHỌN SINH LỜI CHO NHÀ ĐẦU TƯ RẠP CHIẾU
+                  PHIM</a></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0">
+            <img class="card-img-top" src="../img/anh-rap-qt-141126-160823-74.jpg" alt="Title">
+            <div class="card-body mt-3">
+              <h6 class="card-title text-center"><a class="list-group-item fw-bold"
+                  href="../Tin_moi_va_uu_dai/Tinmoi/Tin6.html">RẠP CHIẾU PHIM BETA CINEMAS “VƯỢT BÃO” COVID VÀ SUY THOÁI
+                  NHỜ LỐI ĐI KHÁC BIỆT</a></h6>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-    
-    <iframe src="../Dung_chung/footer.html" frameborder="0" width="100%" style="height: 230px; border:2px soild #f392a4 ;"></iframe>
+
+  </div>
+
+
+  <iframe src="../Dung_chung/footer.html" frameborder="0" width="100%"
+    style="height: 230px; border:2px soild #f392a4 ;"></iframe>
 
 </body>
+
 </html>

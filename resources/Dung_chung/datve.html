@@ -29,6 +29,10 @@
                         <option value="Giao Lộ 8675">Giao Lộ 8675</option>
                         <option value="Án Mạng VENICE">Án Mạng VENICE</option>
                         <option value="Quỷ Ám: Tín Đồ">Quỷ Ám: Tín Đồ</option>
+                        <option value="Thanh Gươm Trừ Tà">Thanh Gươm Trừ Tà</option>
+                        <option value="Quỷ Môn Quan:Gọi Hồn">Quỷ Môn Quan:Gọi Hồn</option>
+                        <option value="Đất Rừng Phương Nam">Đất Rừng Phương Nam</option>
+                        <option value="Kị Sĩ Bóng Đêm">Kị Sĩ Bóng Đêm</option>
                     </select>
                 </div>
                 <div>
@@ -299,8 +303,8 @@
                     <label id="name" class="mb-1"></label>
                     <p class="mb-1"><b>Trafic Cinema Hà Nội</b></p>
                     <p class="mb-1">Suất chiếu:
-                        <strong> <label id="thoi_gian"></label> 
-                        <label id="ngay_chieu"></label>
+                        <strong> <label id="thoi_gian"></label>
+                            <label id="ngay_chieu"></label>
                     </p>
                     <p class="mb-0">Phòng chiếu: <strong>P3</strong> - Số lượng: <label id="seat">0</label>
                     <p>
@@ -318,17 +322,20 @@
     </div>
 
     <script>
+        let thoigian = document.getElementById("thoi_gian");
+        let ngaychieu = document.getElementById("ngay_chieu");
+        let tenphim = document.getElementById("name");
         function myFunction() {
             var name_of_film = document.getElementById("name_film")
-            document.getElementById("name").innerHTML = name_film.options[name_film.selectedIndex].text;
+            tenphim.innerHTML = name_film.options[name_film.selectedIndex].text;
 
             // var name_of_film = document.getElementById("name_film")
             // document.getElementById("name").value = name_film.options[name_film.selectedIndex].text;
         }
-        function myFunction4(){
-                var day_of_film = document.getElementById("day")
-                document.getElementById("ngay_chieu").innerHTML = day.options[day.selectedIndex].text;
-            }
+        function myFunction4() {
+            var day_of_film = document.getElementById("day")
+            ngaychieu.innerHTML = day.options[day.selectedIndex].text;
+        }
         let a = document.querySelectorAll("input");
         let count = 0, s = 0;
         let price = 50;
@@ -353,23 +360,36 @@
             s = 0;
         }
         setInterval(changechair, 1000);
-
-        function myFunction1(){
-                document.getElementById("thoi_gian").innerHTML="17:45";
+        function myFunction1() {
+            thoigian.innerHTML = "17:45";
+        }
+        function myFunction2() {
+            thoigian.innerHTML = "18:30";
+        }
+        function myFunction3() {
+            thoigian.innerHTML = "9:30";
+        }
+        document.getElementById("thanh_toan").addEventListener("click", () => {
+            if (b.textContent=="") {
+                alert("Vui lòng chọn ghế ngồi");
             }
-        function myFunction2(){
-                document.getElementById("thoi_gian").innerHTML="18:30";
+            else if (tenphim.textContent == "") {
+                alert("Vui lòng chọn phim muốn xem");
             }
-        function myFunction3(){
-                document.getElementById("thoi_gian").innerHTML="9:30";
+            else if (ngaychieu.textContent == "") {
+                alert("Vui lòng chọn ngày chiếu phim muốn xem");
             }
-        document.getElementById("thanh_toan").addEventListener("click",()=>{
-            alert("Thanh toan thanh cong");
+            else if (thoigian.textContent == "") {
+                alert("Vui lòng chọn khung giờ muốn xem");
+            }
+            else {
+                alert("Thanh toán thành công");
+            }
         });
     </script>
 
-<iframe src="../../resources/Dung_chung/footer.html" frameborder="0" width="100%"
-style="height: 230px; border:2px soild #f392a4 ;"></iframe>
+    <iframe src="../../resources/Dung_chung/footer.html" frameborder="0" width="100%"
+        style="height: 230px; border:2px soild #f392a4 ;"></iframe>
 </body>
 
 </html>

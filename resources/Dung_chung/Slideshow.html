@@ -33,35 +33,39 @@
         #slide-3 {
             background-image: url(../img/img_2.png);
         }
-        #slide-4{
+
+        #slide-4 {
             background-image: url(../img/img_6.png);
         }
-        .next{
+
+        .next {
             position: fixed;
             right: 0;
-            top:0;
+            top: 0;
             bottom: 0;
             border: none;
-            background:none;
-            background-image: linear-gradient(-90deg,rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0)) ;
-            
+            background: none;
+            background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0));
+
         }
-        .prev{
+
+        .prev {
             position: fixed;
             left: 0;
-            top:0;
+            top: 0;
             bottom: 0;
             background: none;
             border: none;
-            background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0)) ;
-        } 
-        .arrow{
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0));
+        }
+
+        .arrow {
             width: 50px;
             height: 50px;
             border-top: 10px solid white;
             border-left: 10px solid white;
-            
-            
+
+
         }
     </style>
 
@@ -75,35 +79,37 @@
     </div>
     <div class="myslide" id="slide-3"></div>
     <div class="myslide" id="slide-4"></div>
-    <button class="next" onclick="nextslide()"><div style="rotate:135deg " class="arrow"></div></button>
-    <button class="prev" onclick="prevslide()" >
+    <button class="next" onclick="nextslide()">
+        <div style="rotate:135deg " class="arrow"></div>
+    </button>
+    <button class="prev" onclick="prevslide()">
         <div style="rotate:-45deg" class="arrow"></div>
     </button>
     <script>
-        var a=0;
+        var a = 0;
         var slide = document.getElementsByClassName("myslide");
         var t;
         function huyen() {
-            for(let i=0;i<slide.length;i++){
-                if(i<=a) slide[i].style.left="0px";
-                else slide[i].style.left="100vw";
+            for (let i = 0; i < slide.length; i++) {
+                if (i <= a) slide[i].style.left = "0px";
+                else slide[i].style.left = "100vw";
             }
             a++;
-            a%=slide.length;
+            a %= slide.length;
             // if(a==slide.length)a=0;
             t = setTimeout(huyen, 3000);
         }
         huyen();
-        function nextslide(){
+        function nextslide() {
             clearTimeout(t);
             huyen();
         }
-        function prevslide(){
-            a-=2;
-            while(a<0)a+=slide.length;
-            if(a==slide.length){ a=0; }
+        function prevslide() {
+            a -= 2;
+            while (a < 0) a += slide.length;
+            if (a == slide.length) { a = 0; }
             clearTimeout(t);
-            huyen();    
+            huyen();
         }
     </script>
 </body>

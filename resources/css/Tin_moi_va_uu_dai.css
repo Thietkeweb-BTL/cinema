@@ -1,32 +1,36 @@
-html{
+html {
     overflow-x: hidden;
 }
-h2{
+
+h2 {
     width: 70%;
     display: inline-block;
-  margin-right: 64%;
-  font-size: 248%;
-  position: relative;
-  left: -3%;
-  transition: all 1s;
+    margin-right: 64%;
+    font-size: 248%;
+    position: relative;
+    left: -3%;
+    transition: all 1s;
 }
 
 
 
 
-.nav-item{
+.nav-item {
     margin-left: 5px;
 }
-.nav-link{
+
+.nav-link {
     transition: border-bottom 2s;
     font-size: 20px;
 }
+
 .nav-link:hover,
 .nav-link:active {
     color: #0d6efddb;
     border-bottom: 4px solid #0d6efddb;
 }
-header{
+
+header {
     border: none;
     box-shadow: 0px 0px 6px 1px #80808069;
 
@@ -35,64 +39,80 @@ header{
 
 
 
-.slide{
+.slide {
     height: 483px;
     box-shadow: 1px 1px 3px 2px #8080804a;
 }
-.icon{
+
+.icon {
     display: inline-block;
     position: absolute;
     font-size: 155%;
-   color: white;
-  background-color: #00000069;
-  cursor: pointer;
-  transition: all 1s;
-  z-index: 30;
+    color: white;
+    background-color: #00000069;
+    cursor: pointer;
+    transition: all 1s;
+    z-index: 30;
 }
-#pre,#pre1{
+
+#pre,
+#pre1 {
     left: 0;
     top: 50%;
     padding-right: 1%;
 }
-#next,#next1{
+
+#next,
+#next1 {
     right: 1px;
     top: 50%;
     padding-left: 1%;
 }
+
 .icon:hover,
-.icon:active{
+.icon:active {
     background-color: rgba(0, 0, 0, 0.667);
 }
 
-.dot,.dot1{
+.dot,
+.dot1 {
     display: flex;
-  position: absolute;
-  left:35%;
-  color: #6788d5;
-  list-style: none;
- bottom: 2%;
- z-index: 130;
+    position: absolute;
+    left: 35%;
+    color: #6788d5;
+    list-style: none;
+    bottom: 2%;
+    z-index: 130;
 }
-.dot li,.dot1 li{
+
+.dot li,
+.dot1 li {
     transition: all 2s;
     width: 7px;
     height: 7px;
     background-color: rgba(0, 17, 255, 0.48);
-    border-radius: 100%;  
+    border-radius: 100%;
     margin-right: 18px;
 }
-li.dot-active,li.dot-active1{
+
+li.dot-active,
+li.dot-active1 {
     width: 30px;
     border-radius: 5px;
 }
-.list,.list1{
+
+.list,
+.list1 {
     transition: all 2s;
 }
-.item img,.item1 img{
+
+.item img,
+.item1 img {
     height: 482px;
-  width: 634px;
+    width: 634px;
 
 }
-.item{
+
+.item {
     color: aliceblue;
 }

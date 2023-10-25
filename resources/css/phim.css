@@ -206,6 +206,11 @@ p{
         height: 45px;
     }
 }
+@media(max-width:536px){
+    .contain-item{
+       flex-wrap: wrap-reverse;
+    }
+}
 @media(max-width:450px){
     .content-content{
         height: 60px;

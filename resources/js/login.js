@@ -1,4 +1,4 @@
-document.getElementById("submit").onclick = send
+document.getElementById("submit-signin").onclick = send
 
 function send(){
     let email = document.getElementById("email").value ;
@@ -23,6 +23,10 @@ function send(){
     
     if(pass.length < 8){
         alert("Mật khẩu phải có ít nhất 8 kí tự");
+        return;
+    }
+    else{
+        alert("Đăng nhập thành công");
         return;
     }
 }

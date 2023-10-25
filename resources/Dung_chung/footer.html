@@ -251,7 +251,7 @@
             <tr>
                 <td style="margin-left: 5px;">Name:</td>
                 <td>
-                    <input type="text" name="name" placeholder="Your name" style="background-color: #FFE0E6;">
+                    <input type="text" id="yourname" name="name" placeholder="Your name" style="background-color: #FFE0E6;">
                 </td>
             </tr>
            
@@ -259,14 +259,14 @@
                 <td style="margin-left: 5px;">Email:</td>
 
                 <td>
-                    <input id="email" name="" id="" placeholder="Email" style="background-color: #FFE0E6;">
+                    <input id="email"   placeholder="Email" style="background-color: #FFE0E6;">
                 </td>
             </tr>
             <tr>
                 <td style="margin-left: 5px;">Message:</td>
                 <td>
                     <textarea type="text" value="feedback" maxlength="50" size="25"
-                        style=" word-break: break-all; background-color:#FFE0E6; resize: none;"></textarea>
+                        style=" word-break: break-all; background-color:#FFE0E6; resize: none;" id="message"></textarea>
                 </td>
             </tr>
 
@@ -281,7 +281,7 @@
         function SEND() {
             var yourname = document.getElementById("yourname").value;
             var email = document.getElementById("email").value;
-            var message = document.getElementById("Message").value;
+            var message = document.getElementById("message").value;
 
             
 
@@ -305,7 +305,7 @@
                 alert("Comment không được để trống");
                 return ;
             }
-            alert("Feedback thành công");
+            alert("Cảm ơn bạn đã feedback");
             
         }
 

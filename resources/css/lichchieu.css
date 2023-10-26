@@ -1,0 +1,50 @@
+.font{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+.tieude{
+    font-size: 25px;
+    font-weight: 700;
+    color: #03599d;
+    text-decoration: none; 
+} 
+@media only screen and ( min-width:1200px){
+    .tieude{
+        font-size:23px;
+    }
+}
+
+@media only screen and ( max-width:1189px){
+   
+    .tieude{
+        font-size:20px;
+    }
+}
+@media only screen and ( max-width:984px){
+    .tieude{
+        font-size:27px;
+    }
+}
+
+
+
+.tieude:hover{
+    color :#E02222;
+    text-decoration: none;
+}
+
+.phude{
+    font-weight: 700;
+}
+
+.ghichu{
+    font-size: 10px;
+}
+
+.theloai{
+    font-size: 15px;
+    font-weight: 600;
+}

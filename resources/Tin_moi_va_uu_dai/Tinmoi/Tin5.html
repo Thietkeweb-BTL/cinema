@@ -7,6 +7,22 @@
   <title>Tin 5</title>
   <link rel="stylesheet" href="../../../vendors/css/bootstrap.css">
   <link rel="stylesheet" href="../../css/tin_moi.css">
+  <style>
+     .ifr-footer{
+            height: 30vh;
+            overflow: hidden;
+        }
+        @media(max-width:660px){
+            .ifr-footer{
+                height: 91vh;
+            }
+        }
+        @media(max-width:450px){
+            .ifr-footer{
+                height: 70vh;
+            }
+        }
+  </style>
 </head>
 
 <body>
@@ -79,8 +95,8 @@
       </div>
     </div>
   </main>
-  <iframe src="../../Dung_chung/footer.html" frameborder="0" width="100%"
-    style="height: 230px; border:2px soild #f392a4 ;"></iframe>
+  <iframe class="ifr-footer" src="../../Dung_chung/footer.html" frameborder="0" width="100%"
+    style=" border:2px soild #f392a4 ;"></iframe>
 
 </body>
 

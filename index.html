@@ -9,7 +9,22 @@
     <link rel="stylesheet" href="resources/css/trangchu.css">
     <link rel="stylesheet" type="text/css" media="screen" href="https://fonts.googleapis.com/css?family=Oswald">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<style>
+    .ifr-footer{
+            height: 30vh;
+            overflow: hidden;
+        }
+        @media(max-width:660px){
+            .ifr-footer{
+                height: 90vh;
+            }
+        }
+        @media(max-width:450px){
+            .ifr-footer{
+                height: 70vh;
+            }
+        }
+</style>
 </head>
 
 <body>
@@ -153,8 +168,8 @@
 
     </div>
 
-    <iframe src="resources/Dung_chung/footer.html" frameborder="0" width="100%"
-        style="height: 230px; border:2px soild #f392a4 ;"></iframe>
+    <iframe class="ifr-footer" src="resources/Dung_chung/footer.html" frameborder="0" width="100%"
+        style=" border:2px soild #f392a4 ;"></iframe>
 
 
     <script src="resources/js/trangchu.js"></script>

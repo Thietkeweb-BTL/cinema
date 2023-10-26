@@ -16,9 +16,7 @@
 .content {
     display: flex;
 }
-iframe:last-child{
-    height: 100vh;
-}
+
 
 
 #book-tickets {
@@ -72,13 +70,5 @@ iframe:last-child{
         margin: 20px;
 
     }
-    iframe:last-child{
-        height: 95vh;
-   }
 
-}
-@media(max-width:450px){
-    iframe:last-child{
-        height: 70vh;
-   }
 }

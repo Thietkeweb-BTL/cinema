@@ -15,7 +15,8 @@
             font-size: 16px;
             display: flex;
             background-color: #FFE0E6;
-           overflow-x: hidden;
+           /* overflow-x: hidden; */
+           overflow: hidden;
         }
 
         body>* {
@@ -106,6 +107,7 @@
             border-radius: 3px;
             margin: 1px;
             padding: 3px 5px;
+            width: 90%;
             /* transition: 0.5s; */
         }
 
@@ -121,7 +123,7 @@
 
             flex-grow: 1;
             /* background-color: #FFAEBE */
-            background-color: rgba(255, 174, 190);
+            /* background-color: rgba(255, 174, 190); */
         }
 
 
@@ -206,8 +208,8 @@
 
     </div>
 
-    <div class="content-left">
-        <div id="member" style="height: 170px;">
+    <div class="content-left" style="background-color: #FFAEBD;">
+        <div id="member" style="height: 170px; ">
             <h3>Liên Hệ</h3>
             <ul>
                 <li>Lê Thanh Huyền</li>
@@ -251,7 +253,7 @@
             <tr>
                 <td style="margin-left: 5px;">Name:</td>
                 <td>
-                    <input type="text" id="yourname" name="name" placeholder="Your name" style="background-color: #FFE0E6;">
+                    <input type="text" id="yourname" name="name" placeholder="Your name" style="background-color: white;">
                 </td>
             </tr>
            
@@ -259,14 +261,14 @@
                 <td style="margin-left: 5px;">Email:</td>
 
                 <td>
-                    <input id="email"   placeholder="Email" style="background-color: #FFE0E6;">
+                    <input id="email"   placeholder="Email" style="background-color: white;">
                 </td>
             </tr>
             <tr>
                 <td style="margin-left: 5px;">Message:</td>
                 <td>
                     <textarea type="text" value="feedback" maxlength="50" size="25"
-                        style=" word-break: break-all; background-color:#FFE0E6; resize: none;" id="message"></textarea>
+                        style=" word-break: break-all; background-color:white; resize: none;" id="message"></textarea>
                 </td>
             </tr>
 

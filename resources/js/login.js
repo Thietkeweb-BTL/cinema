@@ -2,7 +2,7 @@ let checkmail = /^[a-zA-z0-9._-]+@gmail\.com$/;
 
 document.getElementById("submit-signin").onclick = send;
 document.getElementById("submit-signup").onclick = send1;
-
+document.getElementById("button1").onclick = send2;
 
 function send(){
     let email = document.getElementById("email").value ;
@@ -43,7 +43,7 @@ function send1(){
     let sdt=document.getElementById("sdt");
     let check=document.getElementById("checkcamket");
     let date=document.getElementById("date");
-
+   
     if(name.value.trim()===""){
         alert("Vui lòng điền tên");
         return;
@@ -91,4 +91,15 @@ function send1(){
         return 0;
     }
     alert("Đăng ký thành công");
+}
+
+let mail1=document.getElementById("email3");
+function send2(){
+    if(mail1.value.trim()===""){
+        alert("Vui lòng nhập Email ");
+    }
+    if(!mail1.value.match(checkmail)){
+        alert("Email cần được nhập đúng định dạng");
+        return ;
+    }
 }

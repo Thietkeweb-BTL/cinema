@@ -93,7 +93,7 @@ function send1(){
     alert("Đăng ký thành công");
 }
 
-let mail1=document.getElementById("email3");
+let mail1=document.getElementById("mail3");
 function send2(){
     if(mail1.value.trim()===""){
         alert("Vui lòng nhập Email ");

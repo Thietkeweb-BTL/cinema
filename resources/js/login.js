@@ -2,7 +2,7 @@ let checkmail = /^[a-zA-z0-9._-]+@gmail\.com$/;
 
 document.getElementById("submit-signin").onclick = send;
 document.getElementById("submit-signup").onclick = send1;
-document.getElementById("button1").onclick = send2;
+// document.getElementById("button1").onclick = send2;
 
 function send(){
     let email = document.getElementById("email").value ;
@@ -36,8 +36,8 @@ function send(){
 
 function send1(){
     let name=document.getElementById("name");
-    let email=document.getElementById("email1");
-    let mk=document.getElementById("mk");
+    let email=document.getElementById("email2");
+    let mk=document.getElementById("matkhau");
     let checkpass=document.getElementById("checkpass")
     let gender=document.querySelectorAll("option.option-item");
     let sdt=document.getElementById("sdt");
@@ -93,7 +93,11 @@ function send1(){
     alert("Đăng ký thành công");
 }
 
+<<<<<<< HEAD
 // let mail1=document.getElementById("mail3");
+=======
+// let mail1=document.getElementById("email3");
+>>>>>>> 158468140782a15f1c8c54da2d57be5209efd963
 // function send2(){
 //     if(mail1.value.trim()===""){
 //         alert("Vui lòng nhập Email ");
@@ -102,4 +106,8 @@ function send1(){
 //         alert("Email cần được nhập đúng định dạng");
 //         return ;
 //     }
+<<<<<<< HEAD
+=======
+//     alert("Đăng ký thành công");
+>>>>>>> 158468140782a15f1c8c54da2d57be5209efd963
 // }

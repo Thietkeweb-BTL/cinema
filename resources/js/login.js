@@ -36,8 +36,8 @@ function send(){
 
 function send1(){
     let name=document.getElementById("name");
-    let email=document.getElementById("email2");
-    let mk=document.getElementById("matkhau");
+    let email=document.getElementById("email1");
+    let mk=document.getElementById("mk");
     let checkpass=document.getElementById("checkpass")
     let gender=document.querySelectorAll("option.option-item");
     let sdt=document.getElementById("sdt");

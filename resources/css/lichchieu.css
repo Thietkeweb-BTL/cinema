@@ -28,6 +28,12 @@
         font-size:27px;
     }
 }
+@media  only screen and (max-width:660px) {
+    #header{
+        height:240px !important;
+    }
+    
+}
 
 
 

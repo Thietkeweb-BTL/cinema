@@ -27,7 +27,20 @@
         .content {
             display: flex;
         }
-
+        .ifr-footer{
+            height: 30vh;
+            overflow: hidden;
+        }
+        @media(max-width:660px){
+            .ifr-footer{
+                height: 91vh;
+            }
+        }
+        @media(max-width:450px){
+            .ifr-footer{
+                height: 70vh;
+            }
+        }
 
         @media(max-width:450px) {
             .content {
@@ -97,9 +110,9 @@
             </div>
         </div>
     </div>
-    <iframe id="footer" src="../../../Dung_chung/footer.html" frameborder="0" width="100%"
-        style="height: 192px; border:2px soild #f392a4 ;"></iframe>
-        
+    <iframe id="footer" class="ifr-footer" src="../../../Dung_chung/footer.html" frameborder="0" width="100%"
+        style=" border:2px soild #f392a4 ;"></iframe>
+        <script src="../../../js/trangchu.js"></script>
 
 </body>
 

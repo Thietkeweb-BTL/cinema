@@ -6,14 +6,15 @@ body {
 }
 
 #header {
-    height: 100px;
+    height: 100px !important;
+
 }
 
 @media(max-width:660px) {
     #header {
-        height: 240px;
+        height: 240px !important;
+       
     }
-
 }
 
 a {
@@ -22,45 +23,7 @@ a {
 }
 
 
-/* header {
-    text-align: right;
-    color: white;
-    background-color: black;
-    width: 100%;
-}
 
-nav img {
-
-    border: 0;
-    vertical-align: middle;
-
-} */
-
-/* @media(min-width:506px) {
-    .logo {
-        font-weight: 400;
-        float: left;
-        height: 8wh;
-        width: 8vw;
-        margin-right: 50px;
-
-    }
-
-}
-
-@media (max-width:505px) {
-    .logo {
-        float: left;
-        height: 33vh;
-        width: 25vw;
-        margin-right: 20vh;
-    }
-}
-
-header a {
-    color: white;
-
-} */
 
 nav {
     display: flex;

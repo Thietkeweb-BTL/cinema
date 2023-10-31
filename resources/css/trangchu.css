@@ -11,6 +11,9 @@ body {
 }
 
 @media(max-width:660px) {
+    header{
+        height: 80px;
+    }
     #header {
         height: 290px !important;
         position: absolute !important;

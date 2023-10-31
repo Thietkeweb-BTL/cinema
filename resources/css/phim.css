@@ -67,9 +67,9 @@ iframe:last-child{
 }
 
 @media (max-width:660px) {
-    #nav {
-        height: 240px;
-    }
+   #header{
+    height: 290px !important;
+   }
 
     #top-nav ul li a {
         font-size: 16px;

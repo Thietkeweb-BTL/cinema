@@ -69,6 +69,7 @@ iframe:last-child{
 @media (max-width:660px) {
    #header{
     height: 290px !important;
+    position: absolute !important;
    }
 
     #top-nav ul li a {

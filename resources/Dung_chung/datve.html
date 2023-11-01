@@ -21,6 +21,12 @@
             .ifr-footer{
                 height: 90vh;
             }
+            #header{
+              height: 290px !important;
+            }
+            header{
+              height: 60px !important;
+            }
         }
         @media(max-width:450px){
             .ifr-footer{
@@ -31,8 +37,9 @@
 </head>
 
 <body>
-    <iframe id="header" src="../Dung_chung/header.html" frameborder="0" width="100%"
-        style=" position: sticky; top: 0; height: 130px; z-index: 300;"></iframe>
+    <header  style=" position: sticky; top: 0px; ">
+        <iframe  id="header" src="./resources/Dung_chung/header.html" frameborder="0" width="100%" style="position: absolute;"></iframe>
+    </header>
     <div class="container">
         <div class="row mb-5 mt-3">
             <form class="infor">

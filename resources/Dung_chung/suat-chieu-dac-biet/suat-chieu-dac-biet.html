@@ -10,6 +10,16 @@
     <link rel="stylesheet" href="../../css/phim.css">
     <!-- <link rel="stylesheet" href="../../css/trangchu.css"> -->
     <style>
+        #header{
+    position: absolute;
+    height: 84px !important;
+}
+header{
+    position:sticky;
+    top: 0px;
+    z-index: 100;
+    height: 83px;
+}
  .ifr-footer{
             height: 30vh;
             overflow: hidden;
@@ -17,6 +27,9 @@
         @media(max-width:660px){
             .ifr-footer{
                 height: 91vh;
+            }
+            #header{
+                height: 290px !important;
             }
         }
         @media(max-width:450px){
@@ -28,8 +41,10 @@
 </head>
 
 <body>
-    <iframe id="nav" src="../../Dung_chung/header.html" frameborder="0"
-        style="width: 100%; position: sticky; top: 0;"></iframe>
+    <header>
+        <iframe id="header" src="../../Dung_chung/header.html" frameborder="0"
+        style="width: 100%;  top: 0;"></iframe>
+    </header>
     <nav id="top-nav">
         <ul>
             <li><a href="../phim-dang-chieu/phimdangchieu.html">phim đang chiếu</a></li>

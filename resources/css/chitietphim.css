@@ -5,6 +5,7 @@
 }
 
 .poster img {
+    
 
     height: 70vh;
 }
@@ -15,6 +16,7 @@
 
 .content {
     display: flex;
+    margin-top: 70px;
 }
 
 
@@ -58,17 +60,25 @@
 }
 
 @media(max-width:660px) {
+    header iframe{
+        height: 290px !important;
+    }
     .content {
         flex-direction: column;
+        margin: 0px;
     }
 
     .poster {
         text-align: center;
+    }
+    .poster img{
+        margin-top: 56px;
     }
 
     .in4 {
         margin: 20px;
 
     }
+    
 
 }

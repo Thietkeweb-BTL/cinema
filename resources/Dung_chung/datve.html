@@ -12,16 +12,38 @@
     <link rel="stylesheet" href="../css/datve.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>ĐẶT VÉ</title>
-
+    <style>
+        .ifr-footer{
+            height: 30vh;
+            overflow: hidden;
+        }
+        @media(max-width:660px){
+            .ifr-footer{
+                height: 90vh;
+            }
+            #header{
+              height: 290px !important;
+            }
+            header{
+              height: 60px !important;
+            }
+        }
+        @media(max-width:450px){
+            .ifr-footer{
+                height: 70vh;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <iframe id="header" src="../Dung_chung/header.html" frameborder="0" width="100%"
-        style=" position: sticky; top: 0; height: 130px; z-index: 300;"></iframe>
+    <header  style=" position: sticky; top: 0px; ">
+        <iframe  id="header" src="./resources/Dung_chung/header.html" frameborder="0" width="100%" style="position: absolute;"></iframe>
+    </header>
     <div class="container">
         <div class="row mb-5 mt-3">
             <form class="infor">
-                <div>
+                <div class="film_select">
                     <label for="name_film" class="name_film">Chọn Phim:</label>
                     <select name="name_film" id="name_film" onchange="myFunction()" style="height: 30px; width: 200px">
                         <option></option>
@@ -35,7 +57,7 @@
                         <option value="Kị Sĩ Bóng Đêm">Kị Sĩ Bóng Đêm</option>
                     </select>
                 </div>
-                <div>
+                <div class="time_select">
                     <label for="name_user" class="time_film">Thời gian: </label>
                     <div>
                         <button type="button" class="btn  color-button" onclick="myFunction1()">17:45</button>
@@ -388,8 +410,8 @@
         });
     </script>
 
-    <iframe id="footer" src="../../resources/Dung_chung/footer.html" frameborder="0" width="100%"
-        style="height: 230px; border:2px soild #f392a4 ;"></iframe>
+    <iframe class="ifr-footer" id="footer" src="../../resources/Dung_chung/footer.html" frameborder="0" width="100%"
+        style=" border:2px soild #f392a4 ;"></iframe>
     <script src="../js/trangchu.js"></script>
     </body>
 

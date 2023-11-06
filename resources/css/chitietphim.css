@@ -3,7 +3,9 @@
     margin: 20px 30px;
     text-align: center;
 }
-
+#header{
+    height: 84px !important;
+}
 .poster img {
     
 

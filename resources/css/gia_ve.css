@@ -1,7 +1,12 @@
 body {
     overflow-x: hidden;
 }
-
+#header{
+    height: 84px !important;
+}
+.column-layout{
+    padding-top: 5%;
+}
 .size-text {
     font-size: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

@@ -7,7 +7,9 @@ body {
 #nav {
     height: 100px;
 }
-
+#header{
+    height: 84px !important;
+}
 #top-nav {
     display: flex;
     align-items: center;
